@@ -1,9 +1,8 @@
 const mysql = require("mysql");
 
 const pool = mysql.createPool({
-  "host" : "localhost",
+  "host" : "192.168.64.3",
   "user" : "root",
-  "port" : 8080
   "database" : "android_book_selling_app",
   "password" : "",
   "connectionLimit" : 10

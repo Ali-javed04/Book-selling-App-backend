@@ -1,4 +1,4 @@
-const dbConnection  = require('dbConnection');
+const dbConnection  = require('./dbConnection');
 
 const sign_in = (reqData,callback)=>{
   dbConnection.queryWithParams("select * from users where email = ? password = ?",[reqData.email,reqData.password])

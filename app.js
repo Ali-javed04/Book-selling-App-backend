@@ -17,7 +17,6 @@ app.get('/', function (req, res){
   res.send('Default landing page');
 });
 app.use("/users",require("./Routes/users"));
-app.use("/uploadedFiles",express.static("./Routes/uploadedFiles"));
 
 
 http.listen(port,function(){
