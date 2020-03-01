@@ -4,7 +4,7 @@ const http = require("http").Server(app);
 const bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
-const port = 8080;
+const port = 3306;
 const async = require('async');
 const usersController = require('./Controllers/users');
 

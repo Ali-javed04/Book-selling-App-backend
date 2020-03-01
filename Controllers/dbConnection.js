@@ -1,10 +1,12 @@
 const mysql = require("mysql");
 
 const pool = mysql.createPool({
-  "host" : "192.168.64.3",
+  "host" : "localhost",
   "user" : "root",
   "database" : "android_book_selling_app",
   "password" : "",
+  "connectTimeout": 60 * 60 * 1000,
+    "acquireTimeout": 60 * 60 * 1000,
   "connectionLimit" : 10
 });
 
